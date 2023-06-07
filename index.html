@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Open+Sans:wght@300&family=Signika+Negative&family=Wix+Madefor+Display&display=swap"
+        rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo1" src="Images/logo ONE.png" alt="Logo Programa">
+        <img class="logo2" src="Images/Logo Alura.jpg" alt="Logo Alura">
+    </header>
+    <main>
+        <section class="primera-seccion">
+            <div class="seccioncajatexto">
+                <textarea placeholder="Ingrese el texto que desea encriptar o desencriptar..."
+                    class="textbox"></textarea>
+            </div>
+            <div>
+                <h6 class="alerta">&#9888 Solo letras minúsculas y sin acentos.</h6>
+            </div>
+            <div class="seccion-botones">
+                <input type="button" class="press-encriptar" value="Encriptar">
+                <input type="button" class="press-desencriptar" value="Desencriptar">
+            </div>
+        </section>
+
+        <section class="segunda-seccion">
+            <div class="contenedorimagen">
+                <img class="img" src="Images/imagen.svg" alt="imagen" id="imagen">
+            </div>
+            <div class="contenedor-copiar">
+                <input type="button" class="press-copy" value="Copiar">
+            </div>
+            <div class="contenedor-encriptado">
+                <h2>Ningún mensaje fue <br> encontrado</h2>
+                <p>Ingrese el texto que desea encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+    <script src="Script.js"></script>
+</body>
+
+</html>

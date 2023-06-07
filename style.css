@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #eee9f2;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+}
+
+.logo1 {
+    position: absolute;
+    width: 150px;
+    left: 35px;
+    top: 50px;
+}
+
+.logo2 {
+    position: absolute;
+    width: 80px;
+    left: 205px;
+    top: 50px;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+
+}
+
+.seccioncajatexto {
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    top: 20%;
+    left: 5%;
+    padding-left: 1%;
+}
+
+.textbox {
+    width: 90%;
+    height: 100%;
+    background: none;
+    cursor: pointer;
+    resize: none;
+    border: none;
+    outline: none;
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #2a113e;
+}
+
+.textbox::placeholder {
+    font-size: 30px;
+    color: #2a113e;
+}
+
+.alerta {
+    display: flex;
+    position: absolute;
+    left: 6.5%;
+    top: 80%;
+    color: #343A40;
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.seccion-botones {
+    position: absolute;
+    top: 86%;
+    left: 16%;
+}
+
+.press-encriptar,
+.press-desencriptar {
+    box-sizing: border-box;
+    border: 2px solid #2a113e;
+    border-radius: 24px;
+    padding: 0.5em 0.5em;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    gap: 5%;
+}
+
+.press-encriptar {
+    background: #2a113e;
+    color: #eee9f2;
+}
+
+.press-desencriptar {
+    background-color: #ddd3e5;
+    color: #2a113e;
+}
+
+.press-encriptar:hover,
+.press-desencriptar:hover {
+    font-size: 30px;
+}
+
+/* Style para Segunda Sección*/
+
+.segunda-seccion {
+    display: block;
+    position: relative;
+    width: 28%;
+    height: 89%;
+    top: 7%;
+    right: 7%;
+    padding-right: 1em;
+    border: 2px solid none;
+    background-color: #ddd3e5;
+    border-radius: 24px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.contenedorimagen {
+    position: absolute;
+    box-sizing: border-box;
+    top: 6%;
+    padding-top: 0.5%;
+    left: 10%;
+}
+
+.contenedor-encriptado {
+    position: absolute;
+    box-sizing: border-box;
+    left: 8%;
+    top: 60%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.contenedor-encriptado h2 {
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    color: #2a113e;
+}
+
+.contenedor-encriptado p {
+    font-weight: 400px;
+    font-size: 20px;
+    padding-top: 1em;
+    font-family: 'Inter', sans-serif;
+    color: #2a113e;
+}
+
+.contenedor-resultado {
+    position: absolute;
+    box-sizing: border-box;
+    width: 90%;
+    height: 60%;
+    top: 6%;
+    padding: 0;
+    margin-left: 5%;
+}
+
+.contenedor-resultado p {
+    color: #2a113e;
+    font-size: 16px;
+}
+
+.contenedor-copiar {
+    display: flex;
+    position: absolute;
+    top: 86%;
+    text-align: center;
+    align-content: center;
+    padding-left: 40%;
+}
+
+.press-copy {
+    box-sizing: border-box;
+    border: 2px solid #2a113e;
+    border-radius: 24px;
+    width: 100%;
+    font-size: 24px;
+    background: #2a113e;
+    color: #eee9f2;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    padding: 0.5em 0.5em;
+
+}
+
+.press-copy:hover {
+    font-size: 28px;
+}
+
+.ocultar {
+    display: none;
+}
+
+/* Responsive Design*/
+
+@media (max-width:57.5em) {
+    main {
+        display: flex;
+    }
+
+    .primera-seccion {
+        width: 100%;
+    }
+
+    .seccioncajatexto {
+        top: 18%;
+        width: 75%;
+    }
+
+    .textbox {
+        height: 40%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .textbox::placeholder {
+        font-size: 25px;
+    }
+
+    .alerta {
+        width: 90%;
+        left: 6%;
+        top: 45%;
+        font-size: 15px;
+    }
+
+    .seccion-botones {
+        width: 70%;
+        left: 10%;
+        top: 48%;
+    }
+
+    .press-encriptar,
+    .press-desencriptar {
+        width: 50%;
+        border-radius: 14px;
+        font-size: 18px;
+    }
+
+    .press-encriptar:hover,
+    .press-desencriptar:hover {
+        font-size: 20px;
+    }
+
+    .segunda-seccion {
+        width: 100%;
+        height: 65%;
+        right: 25%;
+        top: 63%;
+        bottom: 0.5%;
+    }
+
+    .contenedor-encriptado {
+        width: 100%;
+        left: 0.5%;
+    }
+
+    .texto-encriptado {
+        width: 100%;
+        top: 3%;
+    }
+
+    .contenedor-encriptado h2 {
+        font-size: 20px;
+    }
+
+    .contenedor-encriptado p {
+        font-size: 15px;
+    }
+
+    .contenedor-imagen img {
+        display: none;
+    }
+
+    .img {
+        width: 120%;
+    }
+
+    .contenedor-resultado {
+        box-sizing: border-box;
+    }
+
+    .press-copy {
+        width: 90%;
+        bottom: 0.5%;
+        right: 25%;
+        font-size: 20px;
+    }
+
+    .press-copy:hover {
+        font-size: 22px;
+    }
+}
